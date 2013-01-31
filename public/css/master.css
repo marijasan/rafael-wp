@@ -1,34 +1,7 @@
-#global {
-	width:300px;
-	margin: 40px auto;
-	border: 1px solid black;
-	background:-webkit-linear-gradient(#d82828 0%, #7c3939 100%);
-}
-
-img {
-	float: right;
-}
-
-p {
-	margin-right: 120px;
-	color: #dd1b1b;
-}
-
-
-
-
-
-
-
-
-
-
-
-
 /*
 	yellow: FFF046
 */
-/*#global {
+#global {
 	width: 960px;
 	margin: 0 auto;
 }
@@ -50,5 +23,4 @@ img {
 	display: block;
 	float: left;
 	margin: 10px;
-}*/
-
+}
