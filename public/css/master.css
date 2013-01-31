@@ -2,6 +2,7 @@
 	width:300px;
 	margin: 40px auto;
 	border: 1px solid black;
+	background:-webkit-linear-gradient(#d82828 0%, #7c3939 100%);
 }
 
 img {
@@ -10,6 +11,7 @@ img {
 
 p {
 	margin-right: 120px;
+	color: #dd1b1b;
 }
 
 
