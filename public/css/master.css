@@ -2,7 +2,7 @@
 	yellow: FFF046
 */
 body {
-	font-family: Helvetica;
+	font-family: 'Titillium Web', sans-serif; 
 }
 img {
 	display: block; 
@@ -55,6 +55,7 @@ img {
 	background-color: #FFF046;
 	color: black;
 	font-size: 17pt;
+	font-family: 'Armata', sans-serif;
 	text-transform: lowercase;
 	padding: 8px 15px;
 	position: absolute;
