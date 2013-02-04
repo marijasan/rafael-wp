@@ -17,6 +17,13 @@ img {
 	margin: 0 auto;
 	padding-top: 70px;
 }
+
+.close {
+	position: absolute;
+	right: -60px;
+	bottom: -30px;
+}
+
 #header {
 	position: fixed;
 	top: 0;
