@@ -1,7 +1,7 @@
 $(document).ready(function(){
-  var $projects = $('#projects'),
-      $images = $('#project .images'),
-      $content = $('#content');
+  $projects = $('#projects')
+  $slideshow = $('#project .slideshow')
+  $content = $('#content')
 
   $projects.imagesLoaded(function(){
     $(this).masonry({
@@ -10,25 +10,10 @@ $(document).ready(function(){
     })
   })
   
-  if ($images.length) {
+  if ($slideshow.length) {
+    resizeSlideshow()
     
-    $images.wrap($('<div class="images_container"></div>'))
-    var $container = $('#project .images_container')
-    var ww = $(window).width()
-    $container.css({
-      overflow: 'hidden',
-      width: ww,
-      marginLeft: - (ww - $content.width()) / 2
-    })
-    $images.css({
-      paddingLeft: (ww - $content.width()) / 2
-    })
-    
-    $images.imagesLoaded(function(){
-      $images.css({
-        width: $images.find('.image, .video').sumWidth()
-      })
-    })
+    $(window).resize(resizeSlideshow)
   };
 })
 
@@ -38,4 +23,23 @@ $.fn.sumWidth = function () {
     sum += $(this).outerWidth()
   })
   return sum
+}
+
+function resizeSlideshow() {
+  var $images = $slideshow.find('.images')
+  var ww = $(window).width()
+  $slideshow.css({
+    overflow: 'hidden',
+    width: ww,
+    marginLeft: - (ww - $content.width()) / 2
+  })
+  $images.css({
+    paddingLeft: (ww - $content.width()) / 2
+  })
+  
+  $images.imagesLoaded(function(){
+    $images.css({
+      width: $images.find('li').sumWidth()
+    })
+  })
 }
