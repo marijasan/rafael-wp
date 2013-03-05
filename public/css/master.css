@@ -6,6 +6,7 @@
 
 body {
 	font-family: 'Titillium Web', sans-serif; 
+	padding-bottom: 100px;
 }
 h1 {
 	font-weight: normal;
@@ -98,12 +99,14 @@ img {
 	column-count:2;
 	-moz-column-gap:50px; /* Firefox */
 	-webkit-column-gap:50px; /* Safari and Chrome */
-column-gap:40px;
+	column-gap:40px;
 }
+
+/* Project Page */
+
 #project .description {
 	width: 480px;
 }
-/* Project Page */
 
 #project .images {
 	list-style: none;
@@ -113,5 +116,5 @@ column-gap:40px;
 }
 #project .images li {
 	float: left;
-	margin-right: 15px;
+	padding-right: 30px;
 }
