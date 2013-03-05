@@ -1,6 +1,9 @@
 /*
 	yellow: FFF046
 */
+
+/* Global Styles */
+
 body {
 	font-family: 'Titillium Web', sans-serif; 
 }
@@ -17,6 +20,8 @@ img {
 	margin: 0 auto;
 	padding-top: 70px;
 }
+
+/* Header Style */
 
 .close {
 	position: absolute;
@@ -54,6 +59,9 @@ img {
 	color: black;
 	text-decoration: none;
 }
+
+/* Projects */
+
 .project {
 	display: block;
 	float: left;
@@ -80,6 +88,9 @@ img {
 .project:hover .title {
 	display: block;
 }
+
+/* Text Page */
+
 .paragraphs {
 	font-size: 17px;
 	-moz-column-count:2; /* Firefox */
@@ -88,4 +99,19 @@ img {
 	-moz-column-gap:50px; /* Firefox */
 	-webkit-column-gap:50px; /* Safari and Chrome */
 column-gap:40px;
+}
+#project .description {
+	width: 480px;
+}
+/* Project Page */
+
+#project .images {
+	list-style: none;
+	width: 1000000px;
+	margin: 0;
+	padding: 0;
+}
+#project .images li {
+	float: left;
+	margin-right: 15px;
 }
